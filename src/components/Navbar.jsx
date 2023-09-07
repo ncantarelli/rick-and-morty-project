@@ -1,9 +1,12 @@
 import React from 'react'
+import Searchbar from './Searchbar'
+
 
 function Navbar() {
+  
   return (
-    <nav>
-      <input type='text' placeholder='Search...'></input>
+    <nav className='search-bar-container'>
+      <Searchbar/>
     </nav>
   )
 }

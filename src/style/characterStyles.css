@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(228, 232, 236);
 }
 
 nav {
@@ -28,14 +28,18 @@ input {
 }
 
 button {
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
     border: 0px;
     padding: 2px;
-    background-color: rgb(24, 33, 64);
+    background-color: #FB6467FF;
     color: white;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    width: 150px;
 }
 
 button:hover {
@@ -50,7 +54,7 @@ button:hover {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     padding: 5px;
     margin-bottom: 20px;
     margin-top: 30px;
@@ -58,15 +62,15 @@ h1 {
 }
 
 h3 {
-    margin-top: 20px;
+    font-size: 24px;
+    /* margin-top: 20px; */
 }
 
 img {
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     margin-bottom: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 5px;
 }
 
 p {
@@ -76,15 +80,20 @@ p {
 
 .cardStyle {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    background-color: #FB6467FF;
+    background-color: white;
     border-radius: 10px;
-    padding: 5px;
+    padding: 0 5px 5px 5px;
     width: 300px;
     height: 400px;
     text-align: center;
     color: white;
+}
+
+.cardStyle h3 {
+    color: #24325FFF;
 }
 
 .characterContainer {
@@ -103,20 +112,41 @@ p {
 .modalShowed {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    position: fixed;
+    justify-content: space-evenly;
+    position: absolute;
     overflow: auto;
-    height: 650px;
-    width: 400px;
+    height: 600px;
+    width: 350px;
     z-index: 9999;
     text-align: center;
     align-items: center;
     background-color: #FB6467FF;
     border-radius: 10px;
+    position: fixed; /* Uses fixed positioning for the modal */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Centers the modal */
+}
+
+.modalShowed img {
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 5px;
+    width: 350px;
+    height: 350px;
+}
+
+.modalShowed h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.modalShowed p {
+    font-size: 18px;
+    margin: 0;
 }
 
 .modalShowed button {
-    margin-top: 50px;
+    background-color: #24325FFF;
+    margin-top: 20px;
     width: 70px;
 }

@@ -5,10 +5,7 @@ import Details from './Details';
 
 function Character({ character }) {
     const [modalClass, setModalClass] = useState("modal")
-    // const printCharacterDetails = (characterDetails) => {
-    //     console.log('it works :>> ', characterDetails);
-    // };
-
+   
     const showModal = () => {
         if (modalClass === "modal") {
           setModalClass("modalShowed")
@@ -16,11 +13,11 @@ function Character({ character }) {
             setModalClass("modal")
       }
     }
+
     return (
         <div className="cardStyle">
             <img src={character.image}/>
-            <p>{character.name}</p>
-            {/* <button onClick={printCharacterDetails}>Show details</button> */}
+            <h3>{character.name}</h3>
             <button onClick={showModal} >Show details</button>
             <div className={modalClass} >
                 <img src={character.image}/>
@@ -30,8 +27,6 @@ function Character({ character }) {
                 <p>{character.status}</p>
                 <button onClick={showModal}>Close</button>
             </div>
-
-            {/* <Modal name={character.name} showModal={showModal}  /> */}
         </div>
     );
 };

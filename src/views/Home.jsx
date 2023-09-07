@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Characters from '../components/Characters';
 
+
 function Home() {
   console.log("it works");
   return (
