@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Character from './Character';
+import "../style/characterStyles.css"
 
 function Characters() {
 
@@ -29,8 +30,8 @@ function Characters() {
     }, []);
     
     return (
-      <div>
-            <h1>Characters</h1>
+      <div className='characterContainer'>
+            
             
             {/* Conditional rendering */}
             {/* {characters && characters.map((character) => {

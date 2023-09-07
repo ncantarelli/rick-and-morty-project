@@ -2,9 +2,9 @@ import React from 'react'
 
 function Footer() {
   return (
-      <div>
-          <p>Footer</p>
-      </div>
+      <footer>
+          <p>For pagination</p>
+      </footer>
   )
 }
 

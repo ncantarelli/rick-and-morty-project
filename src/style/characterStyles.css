@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #24325FFF;}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+input {
+    border-radius: 10px;
+    border: 0px;
+    padding: 5px;
+}
+
+button {
+    border-radius: 10px;
+    border: 0px;
+    padding: 2px;
+    background-color: rgb(24, 33, 64);
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: rgb(17, 23, 46);
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #24325FFF;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+img {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cardStyle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FB6467FF;
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    color: white;
+}
+
+.characterContainer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modal {
+    display: hidden;
+}
+
+.modalShowed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    position: fixed;
+    overflow: auto;
+    height: 650px;
+    width: 400px;
+    z-index: 9999;
+    text-align: center;
+    align-items: center;
+    background-color: #FB6467FF;
+    border-radius: 10px;
+}
+
+.modalShowed button {
+    margin-top: 50px;
+    width: 70px;
+}

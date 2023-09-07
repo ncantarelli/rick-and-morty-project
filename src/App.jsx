@@ -9,10 +9,9 @@ import Characters from './components/Characters'
 function App() {
   
   return (
-    <div>
+    <>
       <Home/>
-      {/* <Characters/> */}
-    </div>
+    </>
   )
  
 }

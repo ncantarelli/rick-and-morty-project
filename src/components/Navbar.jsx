@@ -2,9 +2,9 @@ import React from 'react'
 
 function Navbar() {
   return (
-      <div>
-          <p>Navbar</p>
-      </div>
+    <nav>
+      <input type='text' placeholder='Search...'></input>
+    </nav>
   )
 }
 
