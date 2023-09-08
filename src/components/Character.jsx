@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import "../style/characterStyles.css"
-import Details from './Details';
+import "../style/Styles.css"
+import Searchbar from "./Searchbar"
 
 
 function Character({ character }) {

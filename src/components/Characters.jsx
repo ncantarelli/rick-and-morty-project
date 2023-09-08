@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Character from './Character';
-import "../style/characterStyles.css"
+import "../style/Styles.css"
 
 function Characters() {
 

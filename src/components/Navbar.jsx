@@ -3,10 +3,10 @@ import Searchbar from './Searchbar'
 
 
 function Navbar() {
-  
+
   return (
     <nav className='search-bar-container'>
-      <Searchbar/>
+      <Searchbar />
     </nav>
   )
 }
