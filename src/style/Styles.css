@@ -1,3 +1,7 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -47,7 +51,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(17, 23, 46);
+    background-color: rgb(215, 85, 87);
 }
 
 #root {
@@ -125,6 +129,7 @@ p {
     text-align: center;
     align-items: center;
     background-color: #FB6467FF;
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     position: fixed; /* Uses fixed positioning for the modal */
     top: 50%; /* Centers vertically */
@@ -133,7 +138,7 @@ p {
 }
 
 .modalShowed img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 0px 0px 0 0;
     margin-bottom: 5px;
     width: 350px;
     height: 350px;
@@ -155,4 +160,8 @@ p {
     background-color: #24325FFF;
     margin-top: 20px;
     width: 70px;
+}
+
+.modalShowed button:hover {
+    background-color: rgb(24, 34, 64);
 }

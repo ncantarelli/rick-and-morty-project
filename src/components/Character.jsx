@@ -13,14 +13,15 @@ function Character({ character }) {
             setModalClass("modal")
       }
     }
-
+    
+    
     return (
         <div className="cardStyle">
             <img src={character.image}/>
             <h3>{character.name}</h3>
             <button onClick={showModal} >Show details</button>
-            <div className={modalClass} >
-                <img src={character.image}/>
+            <div className={modalClass} >    
+                <img src={character.image} />
                 <h3>{character.name}</h3>
                 <p>{character.gender}</p>
                 <p>{character.species}</p>
